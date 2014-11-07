@@ -4,7 +4,7 @@ class ERM_Widget {
 
 	function erm_add_scripts(){
 
-		if( is_single() ) {
+		if( is_single() && ( get_post_type() == "post" || get_post_type() == "page" ) ) {
 			// Adding the plugin javascript file
 			$handle = 'erm_script';
 			$src = ERM__PLUGIN_URL.'js/erm.js';
@@ -38,21 +38,25 @@ class ERM_Widget {
 
 
 	function erm_add_button($content){
-		if ( is_single() ) {
+		if ( is_single() && ( get_post_type() == "post" || get_post_type() == "page" ) ) {
 			$new_content = '<button class="erm-btn"><a class="erm-popup-btn" href="#erm-popup-link">Reading Mode</a></button>'.$content;
+			return $new_content;
 		}
-		return $new_content;
+		return $content;
+		
 	}
 
 	function erm_content_div($content){
-		if ( is_single() ) {
+		if ( is_single() && ( get_post_type() == "post" || get_post_type() == "page" ) ) {
 			$new_content = '<div class="erm-content-wrapper">'.$content.'</div>';
+			return $new_content;
 		}
-		return $new_content;
+		return $content;
+		
 	}
 
 	function erm_title_div($title,$id=null){
-		if ( is_single() ) {
+		if ( is_single() && ( get_post_type() == "post" || get_post_type() == "page" ) ) {
 			if(in_the_loop()){
 				$new_title = '<div class="erm-title-wrapper">'.$title.'</div>';
 				return $new_title;
