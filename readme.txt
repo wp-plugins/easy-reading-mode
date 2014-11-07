@@ -40,5 +40,5 @@ You can contact me directly on spgandhi@live.com. I would be more that happy to 
 
 == Screenshots ==
 
-1. `/assets/screenshot1.png`
-2. `/assets/screenshot2.png`
+1. Reading Mode Button.
+2. Popup showing only the title and the main content.
