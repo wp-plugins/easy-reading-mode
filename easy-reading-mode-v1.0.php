@@ -3,7 +3,7 @@
  * Plugin Name: Easy Reading Mode
  * Plugin URI: http://igandhi.com
  * Description: This plugin allows users to read your blog/article in distraction free reading mode.
- * Version: 1.0
+ * Version: 1.0.2
  * Author: Shreyans Gandhi
  * Author URI: http://igandhi.com
  * License: GPL2
