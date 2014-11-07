@@ -3,7 +3,7 @@ Contributors: spgandhi
 Tags: easy reading, reading mode, distraction free reading
 Requires at least: 3.0.1
 Tested up to: 4.0
-Stable tag: 1.0.1
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -49,5 +49,5 @@ You can contact me directly on spgandhi@live.com. I would be more that happy to 
 * The plugin works only on the post and page content type.
 
 == Upgrade Notice ==
-= 1.0.2 =
+= 1.0.3 =
 This update solved a major bug. Upgrade is highly essential for plugin to work.
