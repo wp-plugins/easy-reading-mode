@@ -42,3 +42,12 @@ You can contact me directly on spgandhi@live.com. I would be more that happy to 
 
 1. Reading Mode Button.
 2. Popup showing only the title and the main content.
+
+== Changelog ==
+= 1.0.2 =
+* A major bug solved.
+* The plugin works only on the post and page content type.
+
+== Upgrade Notice ==
+= 1.0.2 =
+This update solved a major bug. Upgrade is highly essential for plugin to work.
