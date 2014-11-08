@@ -19,7 +19,7 @@ This plugin adds a button "Reading Mode" before the post content and when clicke
 ##Features
 * Easy Design Options.
 * Choose the look and feel of the button.
-* Choose between you standard theme button design or your customer design.
+* Choose between you standard theme button design or your custom design.
 
 == Installation ==
 
