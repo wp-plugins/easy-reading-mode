@@ -9,7 +9,7 @@ jQuery(document).ready(function($){
 	// Popup Content
 	popup_content  = '<div class="erm-popup-wrapper mfp-hide" id="erm-popup-link"><div class="erm-popup">';
 	popup_content += '<div class="erm-popup-title">' + erm_the_title + '</div>';
-	popup_content += '<div class="erm-popup-content"' + erm_the_content + '</div>';
+	popup_content += '<div class="erm-popup-content">' + erm_the_content + '</div>';
 	popup_content += '</div></div>'; 
 
 	$('body').append(popup_content);
