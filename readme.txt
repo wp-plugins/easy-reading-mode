@@ -40,7 +40,7 @@ To upload the plugin via FTP follow these steps:
 = What if I have some issues with the plugin? =
 
 You can contact me directly on spgandhi@live.com. I would be more that happy to help you solve the problem.
-= What if I want to suggest some more features?=
+= What if I want to suggest some more features? =
 
 You are more that welcomed to shoot me a mail at spgandhi@live.com. I would love to add that feature to my plugin.
 
