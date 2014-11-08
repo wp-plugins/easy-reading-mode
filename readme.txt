@@ -21,8 +21,6 @@ This plugin adds a button "Reading Mode" before the post content and when clicke
 * Choose the look and feel of the button.
 * Choose between you standard theme button design or your customer design.
 
-**See the plugin demo - [here](http://electronic-eye.in/wordpress/learn-wordpress-online-resources “Electrnic-Eye”)
-
 == Installation ==
 
 1. Download the zip file of this plugin
@@ -40,7 +38,7 @@ To upload the plugin via FTP follow these steps:
 = What if I have some issues with the plugin? =
 
 You can contact me directly on spgandhi@live.com. I would be more that happy to help you solve the problem.
-= What if I want to suggest some more features?=
+= What if I want to suggest some more features? =
 
 You are more that welcomed to shoot me a mail at spgandhi@live.com. I would love to add that feature to my plugin.
 
