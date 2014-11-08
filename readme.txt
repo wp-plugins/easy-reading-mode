@@ -3,7 +3,7 @@ Contributors: spgandhi
 Tags: easy reading, reading mode, distraction free reading
 Requires at least: 3.0.1
 Tested up to: 4.0
-Stable tag: 1.0.3
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -15,6 +15,13 @@ This plugin lets your website user read the main content of your website in an e
 This plugin works in the same way as "Reader" in Safari browser.
 
 This plugin adds a button "Reading Mode" before the post content and when clicked on it, a popup window appears only with the post title and content.
+
+##Features
+* Easy Design Options.
+* Choose the look and feel of the button.
+* Choose between you standard theme button design or your customer design.
+
+**See the plugin demo - [here](http://electronic-eye.in/wordpress/learn-wordpress-online-resources “Electrnic-Eye”)
 
 == Installation ==
 
@@ -30,24 +37,33 @@ To upload the plugin via FTP follow these steps:
 
 == Frequently Asked Questions ==
 
-= Does this plugin has any backend admin page? =
-
-As for now, this plugin does not have any admin options. We are working to provide some basic options in our next update like background color, background url, button style options, button css, etc.
-
 = What if I have some issues with the plugin? =
 
 You can contact me directly on spgandhi@live.com. I would be more that happy to help you solve the problem.
+= What if I want to suggest some more features?=
+
+You are more that welcomed to shoot me a mail at spgandhi@live.com. I would love to add that feature to my plugin.
 
 == Screenshots ==
 
 1. Reading Mode Button.
 2. Popup showing only the title and the main content.
+3. Admin Options Page
 
 == Changelog ==
+
+= 1.1.0 =
+* Added a admin panel options page.
+* Easy to choose button design from the admin options page.
+
 = 1.0.2 =
 * A major bug solved.
 * The plugin works only on the post and page content type.
 
 == Upgrade Notice ==
+
+= 1.1.0 =
+This is a major upgrade. This upgrade adds a admin page to easily design the button.
+
 = 1.0.3 =
 This update solved a major bug. Upgrade is highly essential for plugin to work.

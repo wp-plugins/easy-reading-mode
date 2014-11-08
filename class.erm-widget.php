@@ -39,9 +39,15 @@ class ERM_Widget {
 
 	function erm_add_button($content){
 		if ( is_single() && ( get_post_type() == "post" || get_post_type() == "page" ) ) {
-			$new_content = '<button class="erm-btn"><a class="erm-popup-btn" href="#erm-popup-link">Reading Mode</a></button>'.$content;
-			return $new_content;
+			$button_text = esc_attr( get_option('erm_button_text') );
+			if( $button_text != "" ) {
+				$new_content = '<button class="erm-btn"><a class="erm-popup-btn" href="#erm-popup-link"><span>'.$button_text.'</span></a></button>'.$content;
+			} else {
+				$new_content = '<button class="erm-btn"><a class="erm-popup-btn" href="#erm-popup-link"><span>Reading Mode</span></a></button>'.$content;
+			}
+				return $new_content;
 		}
+	
 		return $content;
 		
 	}
@@ -65,5 +71,45 @@ class ERM_Widget {
 
 		return $title;
 	}
+
+	function erm_add_custom_design_css(){
+		
+    	$button_text_color = esc_attr( get_option('erm_button_text_color') );
+    	$button_text_size = esc_attr( get_option('erm_button_text_size') );
+    	
+
+    	$background_color = esc_attr( get_option( 'erm_button_background_color' ) );
+    	$border = esc_attr( get_option( 'erm_button_border' ) );
+    	$button_padding = esc_attr( get_option('erm_button_padding') );
+    	$button_margin = esc_attr( get_option('erm_button_margin'));
+
+    	$hover_background_color = esc_attr( get_option('erm_hover_button_background_color') );
+    	$hover_text_color = esc_attr( get_option('erm_hover_text_color') );
+
+?>
+		<style>
+			a.erm-popup-btn span{
+				color: #<?php echo $button_text_color; ?>;
+				/*size: <?php echo $button_text_size; ?>px;*/
+				
+				border: none;
+			}
+
+			button.erm-btn{
+				background: #<?php echo $background_color; ?>;
+				border: <?php echo $border; ?>;
+				padding: <?php echo $button_padding ?>;
+				margin: <?php echo $button_margin; ?>;
+			}
+
+			/*button.erm-btn:hover{
+				background: #<?php echo $hover_background_color; ?>;
+				color: #<?php echo $hover_text_color; ?> !important;
+			}*/
+			
+		</style>
+
+<?php	}
+
 
 }
