@@ -21,6 +21,7 @@ require_once( ERM__PLUGIN_DIR . 'class.erm-widget.php' );
 add_action( 'init', 'erm_init_hooks' );
 
 
+
 $activated = esc_attr( get_option('erm_is_activated') );
 
 if( $activated == "yes" && !wp_is_mobile() ){

@@ -11,7 +11,7 @@ class ERM_Admin{
 		wp_register_script( $handle , $src );
 		wp_enqueue_script( $handle );
 		
-		add_options_page( 'Easy Reading Mode | Options Page' , 'Easy Reading Mode' , 'manage_options' , 'reading-mode-options-page' , array( 'ERM_Admin' , 'admin_page_content' ) );
+		
 		
 		// Registering Plugin Options
 			// Activation Option
@@ -33,10 +33,19 @@ class ERM_Admin{
 			// Text Button Design on Hover
 			register_setting( 'erm-settings-group', 'erm_hover_button_background_color' );
 			register_setting( 'erm-settings-group', 'erm_hover_text_color' );
+
+			register_setting( 'erm-settings-group', 'erm_is_first_time' );
+			add_options_page( 'Easy Reading Mode | Options Page' , 'Easy Reading Mode' , 'manage_options' , 'reading-mode-options-page' , array( 'ERM_Admin' , 'admin_page_content' ) );
 	}
 
 	// Admin page content
 	function admin_page_content(){
+		if(get_option('erm_is_first_time') != 'no'){
+				update_option('erm_is_activated','yes');		
+			}
+
+		
+
 		echo '<form method="post" action="options.php" class="erm-options-form">';
 		settings_fields( 'erm-settings-group' );
     	do_settings_sections( 'erm-settings-group' );
@@ -144,7 +153,7 @@ class ERM_Admin{
 					<td><?php submit_button(); ?></td>
 				</tr>
 			</table>
-		
+			<input type="hidden" name="erm_is_first_time" value="no">
 		</form>
 		
 	<?php }
