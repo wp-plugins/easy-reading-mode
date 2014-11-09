@@ -3,7 +3,7 @@ Contributors: spgandhi
 Tags: easy reading, reading mode, distraction free reading
 Requires at least: 3.0.1
 Tested up to: 4.0
-Stable tag: 1.1.1
+Stable tag: 1.1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -49,6 +49,9 @@ You are more that welcomed to shoot me a mail at spgandhi@live.com. I would love
 3. Admin Options Page
 
 == Changelog ==
+= 1.1.2 =
+Plugin activation set to ‘yes’ upon initial installation.
+
 = 1.1.1 =
 A minor javascript bug solved
 
@@ -61,6 +64,9 @@ A minor javascript bug solved
 * The plugin works only on the post and page content type.
 
 == Upgrade Notice ==
+= 1.1.2 =
+Plugin activation set to ‘yes’ upon initial installation.
+
 = 1.1.1 =
 A minor javascript bug solved.
 
