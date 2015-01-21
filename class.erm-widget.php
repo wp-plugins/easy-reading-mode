@@ -41,9 +41,9 @@ class ERM_Widget {
 		if ( is_single() && ( get_post_type() == "post" || get_post_type() == "page" ) ) {
 			$button_text = esc_attr( get_option('erm_button_text') );
 			if( $button_text != "" ) {
-				$new_content = '<button class="erm-btn"><a class="erm-popup-btn" href="#erm-popup-link"><span>'.$button_text.'</span></a></button>'.$content;
+				$new_content = '<a class="erm-btn erm-popup-btn" href="#erm-popup-link"><button class="erm-btn-final"><span>'.$button_text.'</span></button></a>'.$content;
 			} else {
-				$new_content = '<button class="erm-btn"><a class="erm-popup-btn" href="#erm-popup-link"><span>Reading Mode</span></a></button>'.$content;
+				$new_content = '<a class="erm-btn erm-popup-btn" href="#erm-popup-link"><button class="erm-btn-final"><span>Reading Mode</span></button></a>'.$content;
 			}
 				return $new_content;
 		}
@@ -95,11 +95,13 @@ class ERM_Widget {
 				border: none;
 			}
 
-			button.erm-btn{
+			button.erm-btn-final{
 				background: #<?php echo $background_color; ?>;
+				border: 0px;
 				border: <?php echo $border; ?>;
 				padding: <?php echo $button_padding ?>;
 				margin: <?php echo $button_margin; ?>;
+
 			}
 
 			/*button.erm-btn:hover{
