@@ -69,7 +69,7 @@ class ERM_Widget {
 			}
 			
 			</style>
-			<? 
+			<?php 
 		}
 
 
