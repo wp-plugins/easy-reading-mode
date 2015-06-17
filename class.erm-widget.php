@@ -78,7 +78,10 @@ class ERM_Widget {
 
 			if($button_text == '')
 				$button_text = "Reading Mode";
-				$new_content = '<a class="erm-btn erm-popup-btn" href="#erm-popup-link"><button class="erm-btn-final"><span>'.$button_text.'</span></button></a>'.$content;
+				$new_content = '<p id="inline-popup"><a data-effect="mfp-move-from-top" class="erm-btn erm-popup-btn" href="#erm-popup-link"><button class="erm-btn-final"><span>'.$button_text.'</span></button></a></p>'.$content;
+				?>
+				<script type="text/javascript">console.log('5')</script>
+				<?php
 				return $new_content;
 		}
 	

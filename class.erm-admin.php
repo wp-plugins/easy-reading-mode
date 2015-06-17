@@ -30,29 +30,20 @@ class ERM_Admin{
 	function erm_register_settings(){
 		register_setting( 'erm-settings-group', 'erm-settings' );
 
-		add_settings_section( 'erm-general-options', '<h2><u>General Options</u></h2>', array('ERM_Admin','section_one_callback'), 'erm-options-page' );
-		add_settings_section( 'erm-design-options', '<h2><u>Design Options</u></h2>', array('ERM_Admin','section_one_callback'), 'erm-options-page' );
+		add_settings_section( 'erm-general-options', 'General Options', array('ERM_Admin','section_one_callback'), 'erm-options-page' );
+		add_settings_section( 'erm-design-options', 'Design Options', array('ERM_Admin','section_one_callback'), 'erm-options-page' );
 
 		// Declaring All Settings Options
 			$obj = new ERM_Admin();
 
    			$obj->erm_new_field(array(
 					'id'=>'erm_is_activated',
-					'label'=>'Button Activated',
+					'label'=>'Activated',
 					'field_type'=>'checkbox',
 					'type'=>'text',
 					'group'=>'erm-general-options',
 					'class'=>'erm-checkbox'
-					));
-
-            $obj->erm_new_field(array(
-               'id'=>'erm_shortcode_is_activated',
-               'label'=>'Shortcode Activated',
-               'field_type'=>'checkbox',
-               'type'=>'text',
-               'group'=>'erm-general-options',
-               'class'=>'erm-checkbox'
-               ));	
+					));	
 
    			$obj->erm_new_field(array(
    					'id'=>'erm_custom_design',
@@ -205,46 +196,17 @@ class ERM_Admin{
       
       <div class="erm-header" style="margin-top:20px">
          <a href="https://wordpress.org/support/plugin/easy-reading-mode" class="pure-button pure-button-primary" target="_blank">Support</a>
-         <a href="https://wordpress.org/support/view/plugin-reviews/easy-reading-mode" class="pure-button pure-button-primary" target="_blank">Submit A Review</a>
+         <a href="https://wordpress.org/support/plugin/easy-reading-mode" class="pure-button pure-button-primary" target="_blank">Review</a>
          <a href="mailto:spgandhi@live.com" class="pure-button pure-button-primary" target="_blank">Contact Author</a>
       </div>
 
 	    <div class="wrap">
-	        <h1>Plugin Options</h1>
-           <p><i>Note: Design Options do not apply to the Shortcode.</i></p>
-           <p><i>If you are using the plugin shortcode anywhere in the template, then make sure the Button is deactived or else it will show "Read Mode" button twice.</i></p>
+	        <h2>My Plugin Options</h2>
 	        <form action="options.php" method="POST">
 	            <?php settings_fields( 'erm-settings-group' ); ?>
 	            <?php do_settings_sections( 'erm-options-page' ); ?>
 	            <?php submit_button(); ?>
 	        </form>
-           <hr>
-           <h1>For Developers</h1>
-           <hr>
-           <h2>Shortcode [erm_btn]</h2>
-           <p>
-              This plugin supports shortcode, <b>[erm_btn]</b>. The shortcode will add a Reading Mode Button anywhere in your theme or posts.<br>
-              Note: The shortcode will work only on Post Single Page. If you do not understand you can contact the plugin author at spgandhi@live.com.<br><br>
-            
-            <h3>Attributes Supported</h3>
-            The Shortcode supports two attributes:
-            <ul>
-               <li>title - The text to displays. Default is "Read Mode".    <b>[erm_btn title="Read Mode"]</b></li> 
-               <li>icon - Accepted value are 'yes' and 'no'. Default value - 'yes'. <b>[erm_btn icon="no"]</b></li>
-            </ul>
-            <br>
-            <h3>You can add the below code anywhere in Post Single Template.</h3>
-            <code>
-               if ( shortcode_exists( 'gallery' ) ) {<br>
-                  &ensp;&ensp;&ensp;&ensp;do_shortcode('[erm_btn title="Read Mode" icon="yes/no"]');<br>
-                }
-            </code>
-           </p>
-
-           <p>
-           <h3>Example</h3>
-            <img src="<?php echo ERM__PLUGIN_URL.'images/ERM-Shortcode-Example.png' ?>" style="width:400px;">
-           </p>
 	    </div>
     	<?php
 	}
